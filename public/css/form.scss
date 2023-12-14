@@ -1,0 +1,66 @@
+$color_1: #333;
+$color_2: #f00;
+$color_3: #fff;
+$background-color_1: #eee;
+
+/* css for registration form and errors*/
+/* Styles for listing table */
+body {
+	padding: 40px 10px;
+	background-color: $background-color_1;
+}
+.listing-reg {
+	h1 {
+		text-align: center;
+		margin: 0 0 2rem;
+	}
+}
+.form-registration {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	input {
+		width: 100%;
+		margin: 0px 0 10px;
+	}
+	.btn {
+		flex: 1 0 100%;
+	}
+}
+.my-errors {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: $color_1;
+	font-size: 1.2rem;
+	display: table;
+	li {
+		margin: 0 0 1rem;
+		&:before {
+			content: "! Error : ";
+			color: $color_2;
+			font-weight: bold;
+		}
+	}
+}
+.listing-table {
+	width: 100%;
+	th {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		background: #000;
+		color: $color_3;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+	td {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+}
